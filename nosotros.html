@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Maryu Regalos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <header>
+        <div class="header-top">
+            <div class="logo"><i class="fas fa-gift"></i> Maryu.</div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="Búsqueda de productos">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="header-right">
+                <div class="header-contact">
+                    <i class="fab fa-whatsapp"></i>
+                    <div class="contact-text">
+                        <span class="contact-title">Soporte</span>
+                        <span class="contact-number">+51 987 654 321</span>
+                    </div>
+                </div>
+                <div class="header-user-cart">
+                    <a href="#"><i class="fas fa-user"></i></a>
+                    <a href="#" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i> 
+                        <span class="cart-count">0</span> S/0.00
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <nav class="header-nav">
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-heart"></i> Nosotros</a></li>
+                <li><a href="productos.html"><i class="fas fa-gift"></i> Productos</a></li>
+                <li><a href="index.html#servicios"><i class="fas fa-star"></i> Servicios</a></li>
+                <li><a href="#contactos"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- EL BANNER SE MANTIENE -->
+        <section id="inicio">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide-1">
+                        <div class="slide-content">
+                            <h1>Detalles que cuentan tu historia</h1>
+                            <p>Tazas, rompecabezas y diseños en madera hechos a medida para sorprender a tu persona favorita.</p>
+                            <a href="productos.html" class="btn-principal">Ver Catálogo</a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide slide-2">
+                        <div class="slide-content">
+                            <h1>Regalos diseñados con el corazón</h1>
+                            <p>Creamos emociones materializadas en madera y color. Cada detalle está pensado especialmente para ti.</p>
+                            <a href="nosotros.html" class="btn-principal">Conoce Más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <!-- 1. SECCIÓN: NUESTRA HISTORIA -->
+        <section id="nuestra-historia">
+            <div class="historia-container">
+                <div class="historia-texto">
+                    <h2 class="titulo-seccion">Nuestra Historia</h2>
+                    <p>Todo comenzó en Lima con una visión clara: priorizar la conexión emocional y el trabajo artesanal sobre la producción en masa. En Maryu, sabemos que los detalles marcan la diferencia.</p>
+                    <p>Cada taza, rompecabezas o rosa de madera es creado con dedicación y precisión técnica, buscando siempre que tu regalo cuente una historia única y transmita exactamente lo que sientes.</p>
+                </div>
+                <div class="historia-img-wrapper">
+                    <!-- Agrega aquí tu foto de la historia -->
+                    <img src="IMG/historia-maryu.png" alt="Nuestra historia Maryu" class="img-historia">
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. SECCIÓN: NUESTRO EQUIPO -->
+        <section id="nuestro-equipo">
+            <h2 class="titulo-seccion">El corazón de Maryu</h2>
+            <div class="equipo-grid">
+                
+                <div class="equipo-card">
+                    <!-- Agrega la foto de perfil -->
+                    <img src="IMG/equipo-1.png" alt="Fundadora" class="equipo-img">
+                    <h3>Milagros</h3>
+                    <p class="equipo-rol">Fundadora & Diseñadora Gráfica</p>
+                    <p class="equipo-desc">Dirige el rumbo creativo de la marca. Su pasión por el diseño y las proporciones exactas garantizan que cada personalización sea estéticamente perfecta.</p>
+                </div>
+
+                <div class="equipo-card">
+                    <!-- Agrega la foto de perfil -->
+                    <img src="IMG/equipo-2.png" alt="Producción" class="equipo-img">
+                    <h3>Sofía</h3>
+                    <p class="equipo-rol">Especialista en Acabados</p>
+                    <p class="equipo-desc">Se encarga de armar cada regalo con delicadeza, asegurando que desde la caja de madera hasta el lazo final queden absolutamente impecables.</p>
+                </div>
+
+                <div class="equipo-card">
+                    <!-- Agrega la foto de perfil -->
+                    <img src="IMG/equipo-3.png" alt="Atención" class="equipo-img">
+                    <h3>Camila</h3>
+                    <p class="equipo-rol">Atención al Cliente</p>
+                    <p class="equipo-desc">Siempre dispuesta a guiarte. Te ayudará a elegir el detalle ideal y te acompañará durante todo el proceso para que tu sorpresa sea un éxito.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3. SECCIÓN: GALERÍA DE MOMENTOS -->
+        <section id="galeria-momentos">
+            <h2 class="titulo-seccion">Momentos trabajando juntos</h2>
+            <div class="galeria-grid">
+                <!-- Nombra tus fotos de trabajo así en tu carpeta IMG -->
+                <img src="IMG/trabajo-1.png" alt="Armando regalos" class="galeria-img img-larga">
+                <img src="IMG/trabajo-2.png" alt="Empacando" class="galeria-img">
+                <img src="IMG/trabajo-3.png" alt="Diseñando" class="galeria-img">
+                <img src="IMG/trabajo-4.png" alt="Detalles en madera" class="galeria-img">
+                <img src="IMG/trabajo-5.png" alt="Tazas personalizadas" class="galeria-img img-ancha">
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contactos">
+        <div class="footer-top">
+            <div class="footer-info">
+                <h2 class="footer-logo"><i class="fas fa-gift"></i> Maryu.</h2>
+                <p>Creando emociones y momentos inolvidables en cada entrega.</p>
+            </div>
+            
+            <div class="footer-contacto">
+                <h3>Contáctanos</h3>
+                <p><i class="fab fa-whatsapp"></i> +51 987 654 321</p>
+                <p><i class="fas fa-envelope"></i> hola@maryuregalos.com</p>
+            </div>
+
+            <div class="footer-redes">
+                <h3>Síguenos</h3>
+                <div class="redes-iconos">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 Maryu Regalos Personalizados. Entregas seguras en todo el Perú.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            effect: "fade",
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
