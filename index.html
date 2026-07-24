@@ -5,14 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maryu - Regalos Personalizados</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 <body>
 
     <header>
         <div class="header-top">
-            <!-- Logo con ícono -->
+           
             <div class="logo"><i class="fas fa-gift"></i> Maryu.</div>
             
             <div class="search-bar">
@@ -20,7 +22,6 @@
                 <button type="submit"><i class="fas fa-search"></i></button>
             </div>
             
-            <!-- Soporte, Usuario y Carrito -->
             <div class="header-right">
                 <div class="header-contact">
                     <i class="fab fa-whatsapp"></i>
@@ -44,8 +45,8 @@
                 <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
                 <li><a href="nosotros.html"><i class="fas fa-heart"></i> Nosotros</a></li>
                 <li><a href="productos.html"><i class="fas fa-gift"></i> Productos</a></li>
-                <li><a href="index.html#servicios"><i class="fas fa-star"></i> Servicios</a></li>
-                <li><a href="#contactos"><i class="fas fa-envelope"></i> Contacto</a></li>
+                <li><a href="servicios.html"><i class="fas fa-star"></i> Servicios</a></li>
+                <li><a href="contactos.html"><i class="fas fa-envelope"></i> Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -59,14 +60,14 @@
                         <div class="slide-content">
                             <h1>Detalles que cuentan tu historia</h1>
                             <p>Tazas, rompecabezas y diseños en madera hechos a medida para sorprender a tu persona favorita.</p>
-                            <a href="#productos" class="btn-principal">Ver Catálogo</a>
+                            <a href="productos.html" class="btn-principal">Ver Catálogo</a>
                         </div>
                     </div>
                     <div class="swiper-slide slide-2">
                         <div class="slide-content">
                             <h1>Regalos diseñados con el corazón</h1>
                             <p>Creamos emociones materializadas en madera y color. Cada detalle está pensado especialmente para ti.</p>
-                            <a href="#nosotros" class="btn-principal">Conoce Más</a>
+                            <a href="nosotros.html" class="btn-principal">Conoce Más</a>
                         </div>
                     </div>
                 </div>
@@ -77,12 +78,14 @@
         </section>
 
         <section id="nosotros">
-            <div class="nosotros-img-grid">
+        
+            <div class="nosotros-img-grid" data-aos="fade-right">
                 <img src="IMG/nosotros-1.png" alt="Regalo especial" class="img-1">
                 <img src="IMG/nosotros-2.png" alt="Caja decorada" class="img-2">
                 <img src="IMG/nosotros-3.png" alt="Detalle en madera" class="img-3">
             </div>
-            <div class="nosotros-texto">
+         
+            <div class="nosotros-texto" data-aos="fade-left">
                 <h2>Diseñamos con el corazón</h2>
                 <p>En Maryu creemos que un regalo no es solo un objeto, es una emoción materializada. Nos dedicamos a plasmar tus recuerdos, fotos y frases en detalles únicos y llenos de color.</p>
                 <br>
@@ -91,48 +94,47 @@
         </section>
 
         <section id="productos">
-            <h2 class="titulo-seccion">Los Más Regalados</h2>
+            <h2 class="titulo-seccion" data-aos="fade-up">Los Más Regalados</h2>
             <div class="productos-layout">
                 
-                <!-- Lado Izquierdo: Grilla con el DISEÑO ORIGINAL DE TARJETAS -->
                 <div class="productos-grid-6">
                     
-                    <div class="producto-card">
+                    <div class="producto-card" data-aos="fade-up">
                         <img src="IMG/regalos-1.png" alt="Taza blanca" class="img-producto">
                         <h3>Taza "Amanecer"</h3>
                         <p>Taza mágica que revela tu foto.</p>
                         <p class="precio">S/ 45.00</p>
                     </div>
 
-                    <div class="producto-card">
+                    <div class="producto-card" data-aos="fade-up" data-aos-delay="100">
                         <img src="IMG/regalos-2.png" alt="Caja de madera" class="img-producto">
                         <h3>Cajita "Recuerdos"</h3>
                         <p>Cofre de madera con grabado láser.</p>
                         <p class="precio">S/ 65.00</p>
                     </div>
 
-                    <div class="producto-card">
+                    <div class="producto-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="IMG/regalos-3.png" alt="Foto rompecabezas" class="img-producto">
                         <h3>Puzzle "Historia"</h3>
                         <p>Rompecabezas A4 de su foto.</p>
                         <p class="precio">S/ 35.00</p>
                     </div>
 
-                    <div class="producto-card">
+                    <div class="producto-card" data-aos="fade-up">
                         <img src="IMG/regalos-4.png" alt="Fotos polaroid" class="img-producto">
                         <h3>Marco "Momentos"</h3>
                         <p>Cuadro madera, 3 fotos LED.</p>
                         <p class="precio">S/ 55.00</p>
                     </div>
 
-                    <div class="producto-card">
+                    <div class="producto-card" data-aos="fade-up" data-aos-delay="100">
                         <img src="IMG/regalos-5.png" alt="Bolso Personalizado" class="img-producto">
                         <h3>Tote Bag "Teacher"</h3>
                         <p>Bolsa de tela personalizada.</p>
                         <p class="precio">S/ 25.00</p>
                     </div>
 
-                    <div class="producto-card">
+                    <div class="producto-card" data-aos="fade-up" data-aos-delay="200">
                         <img src="IMG/regalos-6.png" alt="Tumbler" class="img-producto">
                         <h3>Tumbler Lápiz</h3>
                         <p>Vaso térmico personalizado.</p>
@@ -141,56 +143,56 @@
 
                 </div>
 
-                <!-- Lado Derecho: Banner Grande -->
-                <div class="productos-banner-derecho">
+  
+                <div class="productos-banner-derecho" data-aos="fade-left">
                     <img src="IMG/banner-regalo.png" alt="Porque un detalle marca la diferencia" class="img-banner-vertical">
                 </div>
 
             </div>
         </section>
 
+    
         <section class="banner-aprobacion">
             <i class="fab fa-whatsapp"></i> SIEMPRE APRUEBAS TU DISEÑO — Te enviamos el boceto por WhatsApp para tu aprobación.
         </section>
 
-        <!-- 4 ÍTEMS DE SERVICIO MANTENIDOS -->
         <section id="servicios">
-            <h2 class="titulo-seccion">Nuestros Servicios Especiales</h2>
+            <h2 class="titulo-seccion" data-aos="fade-up">Nuestros Servicios Especiales</h2>
             <div class="servicios-grid-4">
                 
-                <div class="servicio-item">
+                <div class="servicio-item" data-aos="zoom-in">
                     <img src="IMG/servicios-1.png" alt="Corporativo" class="img-servicio">
                     <div class="servicio-overlay">
                         <h3>Regalos Corporativos</h3>
                         <p>Sorprende a tu equipo.</p>
-                        <a href="#" class="btn-outline">Saber más</a>
+                        <a href="servicios.html" class="btn-outline">Saber más</a>
                     </div>
                 </div>
 
-                <div class="servicio-item">
+                <div class="servicio-item" data-aos="zoom-in" data-aos-delay="100">
                     <img src="IMG/servicios-2.png" alt="Cumpleaños" class="img-servicio">
                     <div class="servicio-overlay">
                         <h3>Fechas Especiales</h3>
                         <p>Kits armados para celebrar.</p>
-                        <a href="#" class="btn-outline">Saber más</a>
+                        <a href="servicios.html" class="btn-outline">Saber más</a>
                     </div>
                 </div>
 
-                <div class="servicio-item">
+                <div class="servicio-item" data-aos="zoom-in" data-aos-delay="200">
                     <img src="IMG/servicios-3.png" alt="Flores" class="img-servicio">
                     <div class="servicio-overlay">
                         <h3>Arreglos Florales</h3>
                         <p>El complemento perfecto.</p>
-                        <a href="#" class="btn-outline">Saber más</a>
+                        <a href="servicios.html" class="btn-outline">Saber más</a>
                     </div>
                 </div>
 
-                <div class="servicio-item">
+                <div class="servicio-item" data-aos="zoom-in" data-aos-delay="300">
                     <img src="IMG/servicios-4.png" alt="Envios" class="img-servicio">
                     <div class="servicio-overlay">
                         <h3>Envíos Sorpresa</h3>
                         <p>Entregamos directo a su puerta.</p>
-                        <a href="#" class="btn-outline">Saber más</a>
+                        <a href="servicios.html" class="btn-outline">Saber más</a>
                     </div>
                 </div>
 
@@ -222,7 +224,6 @@
             </div>
         </div>
         
-        <!-- TIRA DE COPYRIGHT (Fondo Oscuro #1a1a1a) -->
         <div class="footer-bottom">
             <p>&copy; 2026 Maryu Regalos Personalizados. Entregas seguras en todo el Perú.</p>
         </div>
@@ -247,5 +248,14 @@
             },
         });
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, 
+            once: true
+        });
+    </script>
+
 </body>
 </html>

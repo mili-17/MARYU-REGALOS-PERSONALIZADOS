@@ -883,3 +883,243 @@ font-size: 28px;
 margin-right: 10px;
 vertical-align: middle;
 }
+
+.banner-servicios {
+    background-image: url('IMG/banner-regalo.png'); 
+}
+
+.servicios-grid-detalle {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px 50px 80px 50px;
+}
+
+.servicio-card-detalle {
+    display: flex;
+    background-color: var(--color-blanco);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid var(--color-secundario);
+    transition: transform 0.3s;
+}
+
+.servicio-card-detalle:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primario);
+}
+
+.servicio-card-detalle img {
+    width: 45%;
+    object-fit: cover;
+}
+
+.servicio-info {
+    width: 55%;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.servicio-info h3 {
+    font-size: 24px;
+    color: var(--color-primario);
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.servicio-info h3 i {
+    color: var(--color-oscuro);
+}
+
+.servicio-info p {
+    color: var(--color-plomo);
+    font-size: 15px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-beneficios li {
+    font-size: 14px;
+    color: var(--color-texto);
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+}
+
+.lista-beneficios li i {
+    color: var(--color-primario);
+}
+
+.banner-cta {
+    background-color: var(--color-secundario);
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 0;
+}
+
+.banner-cta h2 {
+    color: var(--color-oscuro);
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.banner-cta p {
+    color: var(--color-oscuro);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 1100px) {
+    .servicios-grid-detalle {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .servicio-card-detalle {
+        flex-direction: column;
+    }
+    .servicio-card-detalle img {
+        width: 100%;
+        height: 250px;
+    }
+    .servicio-info {
+        width: 100%;
+    }
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px 80px 50px;
+}
+
+.contacto-info {
+    background-color: var(--color-fondo);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.contacto-info h3 {
+    color: var(--color-primario);
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.contacto-info > p {
+    color: var(--color-plomo);
+    margin-bottom: 30px;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.info-icono {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.info-texto h4 {
+    color: var(--color-oscuro);
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.info-texto p, .info-texto a {
+    color: var(--color-plomo);
+    font-size: 15px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.info-texto a:hover {
+    color: var(--color-primario);
+}
+
+.contacto-formulario {
+    background-color: var(--color-blanco);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    border: 1px solid var(--color-secundario);
+}
+
+.contacto-formulario h3 {
+    color: var(--color-oscuro);
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    color: var(--color-oscuro);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: var(--color-primario);
+}
+
+
+.mapa-ubicacion {
+    width: 100%;
+    display: block;
+}
+
+
+@media (max-width: 900px) {
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+}
